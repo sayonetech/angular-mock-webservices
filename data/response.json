@@ -1,0 +1,45 @@
+{
+    "access": {
+        "token": {
+            "id": "ab48a9efdfedb23ty3494",
+            "expires": "2010-11-01T03:32:15-05:00",
+            "tenant": {
+                "id": "t1000",
+                "name": "Mock Service Project"
+            }
+        },
+        "user": {
+            "id": "u123",
+            "name": "jqsmith",
+            "roles": [
+                {
+                    "id": "100",
+                    "name": "compute:admin"
+                },
+                {
+                    "id": "101",
+                    "name": "object-store:admin",
+                    "tenantId": "t1000"
+                }
+            ],
+            "roles_links": []
+        },
+        "serviceCatalog": [
+            {
+                "name": "Cloud Servers",
+                "type": "compute",
+                "endpoints": [
+                    {
+                        "tenantId": "t1000",
+                        "publicURL": "https://example.host.com/v1/t1000",
+                        "internalURL": "https://example.internal/v1/t1000",
+                        "region": "North",
+                        "versionId": "1",
+                        "versionInfo": "https://example.host.com/v1/",
+                        "versionList": "https://compute.host.com/"
+                    }
+                ]
+            }
+        ]
+    }
+}
